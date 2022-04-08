@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 let config = {
-	dbUrl: 'mongodb+srv://hilmimubarok:koploplo123@hmproducts.oftwt.mongodb.net/HMProducts?retryWrites=true&w=majority'
+	dbUrl: process.env.DB_URL
 };
 
 module.exports = config;
