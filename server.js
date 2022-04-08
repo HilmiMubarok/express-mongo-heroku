@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 // mongoose.set('useFindAndModify', false);
 // mongoose.set('useCreateIndex', true);
 
-const port = 3031;
+const port = process.env.PORT || 3031;
 const config = require('./config/database');
 
 const productRouter = require('./routes/product');
