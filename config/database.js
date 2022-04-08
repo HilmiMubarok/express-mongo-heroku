@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 let config = {
-	dbUrl: process.env.DB_URL
+	dbUrl: process.env.MONGODB_URL
 };
 
 module.exports = config;
